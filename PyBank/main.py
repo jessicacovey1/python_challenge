@@ -48,8 +48,10 @@ print (f"Total: ${total}")
 print (f"Average Change: ${average}")
 print (f"Greatest Increase in Profits: {maximum_date}, ${maximum}")
 print (f"Greatest Decrease in Profits: {minimum_date}, ${minimum}")
-    
-with open("output.txt", 'w') as txt_file:
+
+output_path = os.path.join("Analysis", "new.txt")   
+
+with open(output_path, 'w') as txt_file:
     txt_file.write (f"Financial Analysis")
     txt_file.write (f"---------------------")
     txt_file.write (f"Total Months: {months}")
